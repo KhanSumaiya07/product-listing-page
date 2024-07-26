@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "gilroy";
+}
+
+#main-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F4F5F7;
+}
+
+#main-container {
+  width: 100%;
+  max-width: 100rem;
+  padding: 20px 50px;
+  background: #F4F5F7;
+  position: relative;
+}
+
+.heading {
+  margin: 20px;
+  /* font-size: 24px; */
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+#products-container {
+  padding: 30px 20px;
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.product-card {
+  height: 400px;
+  width: 250px;
+  border: 1px solid #dce1de;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  transition: all .3s;
+  flex-shrink: 0;
+}
+
+.product-card:hover {
+  border: none;
+  box-shadow: 4px 4px 10px rgba(128, 128, 128, 0.809);
+  transform: scale(1.01);
+}
+
+.image-container {
+  height: 68%;
+  width: 100%;
+  transition: all .3s;
+
+}
+
+.product-card:hover .image-container img {
+  transform: scale(1.1);
+}
+
+.image-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.product-info {
+  height: 32%;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* background: green; */
+
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.product-description {
+  font-size: 14px;
+  opacity: 0.8;
+  text-transform: capitalize;
+}
+
+span {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+strike {
+  font-size: 16px;
+  font-weight: 500;
+  opacity: 0.8;
+  margin-left: 2px;
+}
+
+.cart-button {
+  position: absolute;
+  top: 3%;
+  left: 78%;
+  width: 100%;
+}
+
+.cart-button button {
+  height: 40px;
+  width: 40px;
+  background: #fff;
+  border: 1px solid gray;
+  padding: 8px;
+  font-size: 20px;
+  /* font-weight: 600; */
+  /* margin:0 10px; */
+  border-radius: 50%;
+  transition: all .3s;
+}
+
+.product-card:hover .cart-button button {
+  background: #000000e2;
+  color: #fff;
+  border: none;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  top: 40%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.left,
+.right {
+  height: 40px;
+  width: 40px;
+  border: 1px solid gray;
+  border-radius: 50%;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left {
+  margin-left: 8px;
+}
+
+.right {
+  margin-right: 8px;
+}
+
+.setting-container{
+  height: 100%;
+  width: 50%;
+  background: rgb(166, 134, 199);
+  padding: 20px;
+}
+h2{
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.title{
+  display: flex;
+  flex-direction: column;
+ gap: 20px;
+}
+
+input, label, option, select{
+  font-size: 18px;
+  font-weight: 500;
+}
